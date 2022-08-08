@@ -1,0 +1,115 @@
+<html>
+
+<head>
+
+    <title>Producto</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+		<nav>
+            <a href="/Filtrando elemetos/index.html">Volver</a>
+			<a href="/index.html">Inicio</a>
+			<a href="/Filtrando elemetos/index.html">Productos</a>
+			<a href="/conctact/contact.html">Sobre nosotros</a>
+			<a href="/login/login.html">Cuenta</a>
+		</nav>
+	</header>	
+
+    <div class="hero">
+        <div class="row">
+            <div class="col">
+
+                <div class="slider">
+                    <div class="product">
+
+                        <img src="/Descripcion de pructos/zimagenes/col2.jpg" alt="" onclick="clickme(this)">
+
+                    </div>
+                    <div class="preview">
+                        <img src="/Descripcion de pructos/zimagenes/col2.jpg" id="imagebox" alt="" height="100" width="400">
+                    </div>
+                </div>
+
+            </div>
+            <div class="col">
+
+                <div class="content">
+
+                    <h2>Collar de Avengers Marvel</h2>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p class="price">Marca: Marvel</p>
+                    <p class="Price">Precio: $299 MXN</p>
+                    <p>Tamaño: <select name="size">
+
+                            <option value="select size">Selecciona
+                            </option>
+                            <option value="small">Chico 15</option>
+                            <option value="small">Mediano 18</option>
+
+
+                        </select></p>
+                    <p>Cantidad: <input type="text" value="1"></p>
+                    <button type="button">
+                        <i class="fa fa-shopping-cart"></i>
+                        Agregar al carrito</button>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="related">
+            <h2>Productos relacionados</h2>
+            <div class="row">
+                <div class="columns">
+                    <div class="items">
+                        <a href="/Descripcion de pructos/col1/col1.html"><img src="/Descripcion de pructos/zimagenes/col1.jpg" alt=""></a>
+                        <div class="details">
+                            <p>Collar de Harry Potter</p>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i>
+                            </div>
+
+                            <p>MXN $359</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+    <script>
+        function clickme(smallImg) {
+
+            var fullImg = document.getElementById("imagebox");
+            fullImg.src = smallImg.src;
+
+        }
+
+    </script>
+
+
+
+</body>
+
+</html>
